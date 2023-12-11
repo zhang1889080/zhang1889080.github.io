@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        
+    }
+  body {
+    font-family:宋体;
+    background-color: #009b96;
+  }
+  #nav {
+    height: 87px;
+    background: #f0f0f0;
+  }
+  #container1 {
+    width: 1140px;
+    height: 85px;
+    margin: auto;
+  }
+  #logo1 {
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    float: left;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1508895332.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #nav-list {
+    height: 85x;
+    font-size: 26px;
+    float: right;
+    margin-top: 30px;
+  }
+  #nav-list li {
+    float: right;
+    margin: 15px;
+    list-style-type: none;
+  }
+  #banner {
+    margin-left: auto;  
+    margin-right: auto;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-position: center;
+    background-image: url(https://up.zhuoku.org/22/54/15/51/c266d9c0995e6a7b38f371c569855744.jpg);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+  #text1 {
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+    color: white;
+    font-size: 36px;
+  }
+  #about {
+    height: 800px;
+    background: #f0f0f0;
+    position: relative;
+  }
+  #products {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  #product1 {
+    height: 400px;
+    width: 30%;
+    float: left;
+    margin-top: -130px;
+  }
+  #title1 {
+    height: 130px;
+    background: black;
+    font-size: 22px;
+    color: white;
+    padding:20px 0 0 20px;
+  }
+  #img1 {
+    height: 300px;
+    background-image: url(https://pic.rmb.bdstatic.com/a15c931efb5e1bdb70d5ccd058bdd813.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #product2 {
+    height: 400px;
+    width: 30%;
+    margin: 0 5%;
+    float: left;
+  }
+  #title2 {
+    height: 130px;
+    background: black;
+    font-size: 22px;
+    color: white;
+    margin-top: -130px;
+    padding:20px 0 0 20px;
+  }
+  #img2 {
+    height: 300px;
+    background-image: url(https://5b0988e595225.cdn.sohucs.com/images/20180614/befbe1b80fa9456eb49d66da8b76806d.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #product3 {
+    height: 400px;
+    width: 30%;
+    float: right;
+  }
+  #title3 {
+    height: 130px;
+    background: black;
+    font-size: 22px;
+    color: white;
+    margin-top: -130px;
+    padding:20px 0 0 20px;
+  }
+  #img3 {
+    height: 300px;
+    background-image: url(./img/666.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #text2 {
+    width: 1000px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    color: #405655;
+  }
+  #text2 p {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    color: black;
+  }
+  #service {
+    height: 600px;
+    background: #fff;
+  }
+  #text3 {
+    width: 1000px;
+    text-align: center;
+    font-size: 30px;
+    color: #405655;
+    margin: 25px auto;
+  }
+  #text3 p {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 auto;
+    color: black;
+  }
+  #box1 {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  #box2 {
+    height: 400px;
+    width: 22%;
+    float: left;
+  }
+  #img4 {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 20px auto;
+    
+    background-image: url(https://img2.baidu.com/it/u=2849647775,3448931163&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #title4 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title4 h3{
+    text:bold;
+    color:#009b96
+  }
+  #box3 {
+    height: 400px;
+    width: 22%;
+    margin: 0 4%;
+    float: left;
+  }
+  #img5 {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 20px auto;
+    background-image: url(https://img1.baidu.com/it/u=3093824393,3148466551&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #title5 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title5 h3{
+    text:bold;
+    color:#009b96
+  }
+  #box4 {
+    height: 400px;
+    width: 22%;
+    margin-right: 4%;
+    float: left;
+  }
+  #img6 {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 20px auto;
+    
+    background-image: url(https://up.ipaddesk.com/22/ef/e7/63/5a6a52d2869000da9a9acd84bb4e927d.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #title6 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title6 h3{
+    text:bold;
+    color:#009b96
+  }
+  #box5 {
+    height: 400px;
+    width: 22%;
+    float: right;
+  }
+  #img7 {
+    height:300px;
+    width: 300px;
+    border-radius: 100%;
+    margin: 20px auto;
+    
+    background-image: url(https://img1.baidu.com/it/u=711058653,898461311&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #title7 {
+    text-align: center;
+    font-size: 24px;
+  }
+  #title7 h3{
+    text:bold;
+    color:#009b96
+  }
+  #nav-bottom {
+    height: 60px;
+    margin-top: 150px;
+    position: relative;
+    background-color: #3e5e5d;
+    font-size: 28px;
+  }
+  #text4 {
+    width: 650px;
+    height: 60px;
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 325px);
+  }
+  #text4 p {
+    float: right;
+    margin: 10px;
+    color: #fff;
+  }
+  #footer1 {
+    height: 250px;
+    background: #405655;
+    border-top: 1px solid #fff;
+  }
+  #container2 {
+    width: 1000px;
+    height: 300px;
+    margin: 50px auto;
+  }
+  #information {
+    width: 600px;
+    height: 300px;
+    float: left;
+    color: #fff;
+  }
+  #information li{
+    list-style-type: none;
+    font-size: 22px;
+  }
+  #logo2 {
+    width: 200px;
+    height: 300px;
+    float: right;
+    background-image: url(https://rwd.gtut.com.tw/demo37/proimage/banner/2017/1509618211.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #footer2 {
+    height: 50px;
+    position: relative;
+    background-color: #1b2827;
+  }
+  #text5 {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 200px);
+  }
+  #text5 p {
+    float: right;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  a {  
+        text-decoration: none;  
+        color: black;
+    }
+
+
+ 
+    </style>
+</head>
+<body>
+    <div id="nav" >
+        <div id="container1">
+          <div id="logo1"></div>
+            <ul id="nav-list">
+                <li><a href="https://www.baidu.com/">联系</a></li>
+                <li><a href="https://www.baidu.com/">下载</a></li>
+                <li><a href="https://www.baidu.com/">产品</a></li>
+                <li><a href="https://www.baidu.com/">服务</a></li>
+                <li><a href="https://www.baidu.com/">新闻</a></li>
+                <li><a href="https://www.baidu.com/">关于</a></li>
+            </ul>
+        </div>
+        </div>
+
+      <div id="banner" >
+        <div id="text1">
+          <h1>海洋蓝</h1>
+          <h3>海洋保护</h3>
+        </div>
+      </div>
+
+      <div id="about" style="background-color: #009b96;">
+        <div id="products">
+          <div id="product1">
+            <div id="title1">石油开采、运输造成大量的石油泄漏对海洋生态系统造成了毁灭性的影响，导致大量海洋生物死亡，破坏了海洋生态平衡。</div>
+            <div id="img1"></div>
+          </div>
+          <div id="product2">
+            <div id="title2">塑料垃圾对海洋生物和海洋环境造成了严重威胁，影响了海洋生物的生存和整个海洋生态系统的健康。</div>
+            <div id="img2"></div>
+          </div>
+          <div id="product3">
+            <div id="title3">放射性物质进入海洋中的生物体内，对生物的生长、繁殖和遗传基因产生威胁，从而对海洋生态系统造成持久的损害。</div>
+            <div id="img3"></div>
+          </div>
+        </div>
+        <div id="text2">
+          <h2><a href="">关于</a></h2>
+          <p style="text-align: justify;text-indent: 2em;">
+            海洋为人类提供了丰富的资源，包括风能、水能、生物、矿物等。
+            海洋中含有的鱼类、贝类、海藻等生物资源为人类提供了大量的食物；海藻、海绵等生物资源具有药用价值；
+            海洋中还蕴藏着大量的能源资源，如海洋风力发电、潮汐能、海水温差能等。海洋中的植物通过光合作用产生氧气，为地球上的所有生命提供必要的氧气。
+            海洋对气候有重要影响。海洋中的水流、海洋生物和盐度等因素对气候起到重要作用。海洋是人类文明的重要发祥地。
+            整个人类文明由两大部分组成：陆地文明和海洋文明。海洋在人类文化和娱乐中也扮演着重要的角色。
+            海洋资源对于许多国家和地区的经济发展有着重要的作用，如渔业、海洋运输、旅游业等。
+            海洋对于全球环境的保护和维护至关重要，海洋中的生物可以帮助减少大气中的二氧化碳含量，保护气候环境。
+            </p>
+        </div>
+      </div>
+      <div id="service" style="background-color: #009b96;">
+        <div id="text3">
+          <h2><a href="">服务</a></h2>
+          <p id="serve">地球能满足人类的需要，但满足不了人类的贪婪...</p>
+        </div>
+        <div id="box1">
+          <div id="box2">
+            <div id="img4"></div>
+            <div id="title4">
+              
+              <p>珍惜资源，永续利用</p>
+            </div>
+          </div>
+          <div id="box3">
+            <div id="img5"></div>
+            <div id="title5">
+              
+              <p>绿色消费，消费绿色</p>
+            </div>
+          </div>
+          <div id="box4">
+            <div id="img6"></div>
+            <div id="title6">
+             
+              <p>尊崇海洋，敬畏生命</p>
+            </div>
+          </div>
+          <div id="box5">
+            <div id="img7"></div>
+            <div id="title7">
+              
+              <p>保护海洋，造福人民</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="nav-bottom" >
+        <div id=text4>
+          <p>联系我们</p>
+          <p>|</p>
+          <p>下载</p>
+          <p>|</p>
+          <p>产品</p>
+          <p>|</p>
+          <p>服务</p>
+          <p>|</p>
+          <p>新闻</p>
+          <p>|</p>
+        </div>
+      </div>
+      <div id="footer1" >
+        <div id="container2">
+          <ul id="information">
+            <!-- <li>138-XXXX-XXXX</li>
+            <li>188-XXXX-XXXX</li> -->
+            <li>信息工程学院</li>
+          </ul>
+          <div id=logo2></div>
+        </div>
+      </div>
+      <div id="footer2" >
+        <div id="text5">
+          <p>隐私政策</p>
+          <p>现场地图</p>
+          <p>GTUT设计</p>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+</body>
+</html>
